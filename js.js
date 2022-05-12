@@ -16,6 +16,7 @@ $("#submit").on("click", function (eve) {
       $('.pokeImg').html(`<img width='150px' src=${result.sprites.front_default}>`);
       $('.pokeName').html(`${result.name.toUpperCase()}`);
       $('.pokeId').html(`#${result.id}`);
+      $('.pokeText').html(`TYPE: ${result.types[0].type.name.toUpperCase()}`);
     },
     error: function () {
       alert("erro!");
