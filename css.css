@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+.container1{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 10% 20px 10%;
+}
+
+.container2{
+    background-color: yellow;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 10% 20px 10%;
+}
+
+.pokeCss{
+    
+    background-color: blue;
+    max-width: 80%;
+}
+
+.cardNomeId{
+    background-color: yellow;
+    text-align: center;
+    flex-flow: row space-between;
+    padding: 20px;
+    margin: 20px 10% 20px 10%;
+}
