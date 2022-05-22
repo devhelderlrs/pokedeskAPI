@@ -1,20 +1,14 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(224, 19, 19);
+    background-image: url(https://wallpaperaccess.com/full/418495.jpg);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.mae{
-    flex-flow: column center;
 }
 
 .container1{
     display: flex;
     justify-content: center;
-    background-color: black;
     text-align: center;
-    box-shadow: 0 0 10px 5px rgb(220, 185, 185);
     padding: 20px;
 }
 
@@ -25,8 +19,6 @@ body{
 }
 
 .container1 h1{
-    color: white;
-    text-shadow: 0px 0px 30px rgb(235, 5, 5);
     margin-bottom: 40px;
 }
 
@@ -36,26 +28,38 @@ body{
     font-size: 20px;
     height: 40px;
     width: 400px;
+    border: none;
+    border-radius: 50px;
+}
+
+.container1 input[type="submit"]{
+    width: 200px;
+    background-color: rgb(243, 118, 118);
+    color: white;
 }
 
 .container1 #inputUser{
     margin-bottom: 20px;
 }
 
+.main {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+}
+
 .container2{
     display: none;
     justify-content: center;
     border-radius: 10px;
-    font-weight: 1000;
-    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
-    background-color: white;
+    font-weight: 100;
     text-align: center;
     padding: 20px;
     margin: 20px 10% 20px 10%;
 }
 
 .container2 .colunaIdName{
-    
     display: flex;
     justify-content: space-between;
     margin-top: -30px;
@@ -63,10 +67,13 @@ body{
 }
 
 .pokeCss{
-    text-align: justify;
-    padding: 50px 10px;
-    border-radius: 10px;
-    background-color: rgba(224, 19, 19);
+    text-align: center;
+    padding: 50px 200px;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     max-width: 100%;
 }
 
@@ -75,14 +82,32 @@ body{
     text-align: center;
 }
 
-.pokeId, .pokeName{
+.colunaIdName {
+    background: rgba( 0, 0, 0, .5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border: 1px solid rgba( 255, 255, 255, 0.5 );
+    font-size: 20pt;
+}
+
+.pokeName{
     padding: 10px;
-    border-radius: 10px;
-    background-color: white;
+    color: white;
+}
+
+.pokeId {
+    font-weight: 600;
+    padding: 10px;
+}
+
+.pokeName::first-letter {
+    text-transform: capitalize;
 }
 
 .colunaStats{
-    background-color: white;
+    font-size: 12pt;
+    text-align: start;
     padding: 20px;
     border-radius: 10px;
     margin: 0 20px -20px 20px;
